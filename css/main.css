@@ -1,0 +1,32 @@
+:root {
+    --ac-color: #12301b;
+    --color1: #fff;
+    --color2: #f3f3f3;
+    --title-color: #333333;
+    --nav-height: 8vh;
+}
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--color);
+}
+
+body {
+    padding-top: var(--nav-height);
+}
+
+.left, .right {
+    position: relative;
+    width: 50%;
+}
+
+a {
+    color: var(--color1);
+    text-decoration: underline transparent;
+    transition: 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline var(--color1);
+}

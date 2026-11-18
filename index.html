@@ -3,9 +3,418 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>normandix</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    bonjour je
+    <nav>
+        <div class="left">
+            <a href="./index.html">le logo</a>
+        </div>
+        <div class="right">
+            <a href="./index.html#expertise">Notre expertise</a>
+            <a href="./index.html#realisations">Nos réalisations</a>
+            <a href="./contact.html">Prendre contact</a>
+        </div>
+    </nav>
+
+    <section id="header">
+        <img src="./asset/header.avif">
+        <h3>
+            nom de l'entreprise
+        </h3>
+        <h1>
+            Artisant paysagiste
+        </h1>
+        <div class="cta">
+            <a href="./contact.html">nous contacter</a>
+            <a href="#realisations">voir nos réalisations</a>
+        </div>
+    </section>
+
+    <section id="expertise">
+        <h2>
+            Nos domaines d'expertise
+        </h2>
+        <div class="conteneur">
+            <div class="service">
+                <div class="title">
+                    <img src="./asset/paysagisme.avif">
+                    <h3>Paysagisme</h3>
+                </div>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo perspiciatis alias officiis vitae veritatis quae natus explicabo nisi deleniti, saepe labore porro quisquam ad! Ut magni hic officia a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo perspiciatis alias officiis vitae veritatis quae natus explicabo nisi deleniti, saepe labore porro quisquam ad! Ut magni hic officia a?</P>
+            </div>
+            <div class="service">
+                <div class="title">
+                    <img src="./asset/elagage.avif">
+                    <h3>Elagage</h3>
+                </div>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo perspiciatis alias officiis vitae veritatis quae natus explicabo nisi deleniti, saepe labore porro quisquam ad! Ut magni hic officia a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo perspiciatis alias officiis vitae veritatis quae natus explicabo nisi deleniti, saepe labore porro quisquam ad! Ut magni hic officia a?</P>
+            </div>
+            <div class="service">
+                <div class="title">
+                    <img src="./asset/espace-vert.jpg">
+                    <h3>Entretien des espaces verts</h3>
+                </div>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo perspiciatis alias officiis vitae veritatis quae natus explicabo nisi deleniti, saepe labore porro quisquam ad! Ut magni hic officia a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo perspiciatis alias officiis vitae veritatis quae natus explicabo nisi deleniti, saepe labore porro quisquam ad! Ut magni hic officia a?</P>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients">
+        <h2>Ils nous ont fait confiance</h2>
+        <div class="auto-slider">
+            <div class="avis-list"><!-- TODO mettre les avis dans un json et crée le dom dynamiquement -->
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        bien
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        top
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        super
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        génial
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        incroyable
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        triple monstre
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        bon j'ai plus d'inspi mais c'était fabuleux
+                    </p>
+                </div>
+            </div>
+            <div class="avis-list"><!-- TODO mettre les avis dans un json et crée le dom dynamiquement -->
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        bien
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        top
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        super
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        génial
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        incroyable
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        triple monstre
+                    </p>
+                </div>
+                <div class="avis">
+                    <div class="avis-header">
+                        <img alt="A"/>
+                        <div>
+                            <p>
+                                Nom Prenom
+                            </p>
+                            <p class="date">
+                                15/10/2026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etoile">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                        <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg">
+                    </div>
+                    <p>
+                        bon j'ai plus d'inspi mais c'était fabuleux
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="realisations">
+        <h2>nos réalisations</h2>
+        <div class="slider">
+            <div class="realisation">
+                <h3>
+                    type de realisation 1
+                </h3>
+                <img src="/asset/realisations/template.png">
+                <p>petite description du taffe</p>
+            </div>
+            <div class="realisation">
+                <h3>
+                    type de realisation 1
+                </h3>
+                <img src="/asset/realisations/template.png">
+                <p>petite description du taffe</p>
+            </div>
+        </div>
+        <button><-</button>
+        <button>-></button>
+    </section>
 </body>
 </html>

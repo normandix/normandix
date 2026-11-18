@@ -1,0 +1,210 @@
+/**********************************  le header  *********************************/
+
+#header {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - var(--nav-height));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header * {
+    position: relative;
+    z-index: 5;
+}
+
+#header img {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    pointer-events: none;
+}
+
+#header h3 {
+    font-size: 2rem;
+    color: var(--color2);
+    margin: 0px;
+}
+
+#header h1 {
+    margin-top: 10px;
+    font-size: 5rem;
+    color: var(--color1);
+}
+
+#header .cta {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#header .cta a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid var(--color1);
+    transition: 0.2s ease-in-out;
+}
+
+#header .cta a:hover {
+    background-color: var(--color1);
+    color: var(--ac-color);
+    transform: scale(1.1);
+    border: 1px solid var(--ac-color);
+}
+
+/**********************************  l'expertise  *******************************/
+
+#expertise, #realisations {
+    padding-top: calc(var(--nav-height) + 20px);
+    padding-bottom: calc(var(--nav-height) + 20px);
+}
+
+#expertise h2, #realisations h2 {
+    position: relative;
+    font-size: 3rem;
+    color: var(--ac-color);
+    width: max-content;
+    left: 10%;
+    margin-top: 0px;
+}
+
+#expertise .conteneur {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#expertise .service {
+    width: 30%;
+}
+
+#expertise .service .title {
+    position: relative;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#expertise .service .title h3 {
+    z-index: 2;
+    color: var(--color1);
+    font-size: 2rem;
+}
+
+#expertise .service img {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    border-radius: 10px;
+    filter: brightness(0.6);
+    pointer-events: none;
+}
+
+#expertise .service p {
+    position: relative;
+    text-align: justify;
+    padding: 5px;
+}
+
+/**********************************  client  ************************************/
+#clients {
+    background-color: var(--ac-color);
+    padding-top: calc(var(--nav-height) + 20px);
+    padding-bottom: calc(var(--nav-height) + 20px);
+}
+
+#clients h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color2);
+}
+
+#clients .auto-slider {
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+}
+
+#clients .auto-slider .avis-list {
+    display: flex;
+    animation: avis-slider linear infinite 80s;
+}
+
+#clients .auto-slider .avis-list .avis {
+    --margin-size: 50px;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: justify;
+    margin-left: var(--margin-size);
+    margin-right: var(--margin-size);
+    background-color: var(--color2);
+}
+
+@keyframes avis-slider {
+    0% {
+        transform: translate(0%);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+.avis-header img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    border-radius: 100%;
+    position: relative;
+    background-color: var(--title-color);
+    color: var(--color1);
+}
+
+.avis-header img::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.avis-header {
+    display: flex;
+}
+
+.avis-header div {
+    padding-left: 10px;
+}
+
+.avis-header div p {
+    margin: 0px;
+}
+
+.avis-header div .date {
+    color: gray;
+}
+
+.avis .etoile img {
+    width: 20px;
+}
+
+/**********************************  réalisation  *******************************/
+
+/*
+    css #realisations et realisations h2 dans la section expertise
+*/
+
