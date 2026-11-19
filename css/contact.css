@@ -1,0 +1,67 @@
+body {
+    background-image: url("../asset/contact_bg.avif");
+}
+
+h1 {
+    font-size: 3rem;
+    position: relative;
+    color: var(--color1);
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 70%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #333333aa;
+    backdrop-filter: blur(14px);
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form div input {
+    font-size: 1.1rem;
+    width: 50%;
+    margin: 5px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+form button {
+    position: relative;
+    background-color: transparent;
+    color: var(--color1);
+    border: 1px solid var(--color1);
+    width: max-content;
+    padding: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 1.2rem;
+}
+
+form button:hover {
+    background-color: var(--ac-color);
+    border: 1px solid var(--ac-color);
+    transform: translate(-50%) scale(1.2);
+}
